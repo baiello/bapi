@@ -11,6 +11,8 @@ const app = express()
 app.use(helmet())
 app.use(corsMiddleware)
 
+app.use('/articles', require('./routes/articles'))
+
 app.get('/', (req, res) => res.send('Hello BAPI'))
 
 app.listen(PORT)
