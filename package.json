@@ -1,0 +1,30 @@
+{
+  "name": "bapi",
+  "version": "1.0.0",
+  "description": "baiello api",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --watch src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baiello/bapi.git"
+  },
+  "keywords": [
+    "baiello"
+  ],
+  "author": "Brice AIELLO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baiello/bapi/issues"
+  },
+  "homepage": "https://github.com/baiello/bapi#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
