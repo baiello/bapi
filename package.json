@@ -22,7 +22,8 @@
   "homepage": "https://github.com/baiello/bapi#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
