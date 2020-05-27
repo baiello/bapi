@@ -2,6 +2,7 @@ const express = require('express')
 const helmet = require('helmet')
 
 const corsMiddleware = require('./middlewares/corsMiddleware')
+const { connectDb } = require('./utils/db')
 
 require('dotenv').config()
 const PORT = parseInt(process.env.PORT, 10) || 3000
@@ -15,4 +16,4 @@ app.use('/articles', require('./routes/articles'))
 
 app.get('/', (req, res) => res.send('Hello BAPI'))
 
-app.listen(PORT)
+connectDb(() => app.listen(PORT))
